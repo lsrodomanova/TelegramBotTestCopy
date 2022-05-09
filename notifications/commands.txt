@@ -1,6 +1,6 @@
 curl -X POST \
      -H 'Content-Type: application/json' \
-     -d '{"chat_id": "-620362119", "text": "Im a hackerman", "disable_notification": false}' \
+     -d '{"chat_id": "-1001541638767", "text": "Im a hackerman", "disable_notification": false}' \
      https://api.telegram.org/botXXX/sendMessage
 
 
