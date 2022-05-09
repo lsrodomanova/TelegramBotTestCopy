@@ -21,7 +21,7 @@ import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 import static org.hamcrest.MatcherAssert.assertThat;
 
-public class FileDownloadTests {
+public class FileDownloadTests extends TestBase {
 
     ClassLoader cl = FileDownloadTests.class.getClassLoader();
 
@@ -30,17 +30,10 @@ public class FileDownloadTests {
     private static final String link2="Лицензии на услуги связи";
 
 
-    @BeforeAll
-    static void setUp() {
-        Configuration.browserSize = "1920x1080";
-
-    }
-
     @DisplayName("Поиск и скачивание файла")
     @Test
 
     public void SearchDownloadFile() {
-        SelenideLogger.addListener("allure", new AllureSelenide());
 
         step ("Открыть главную страницу", () -> {
             open(URL);
